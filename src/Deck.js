@@ -1,21 +1,20 @@
-const cardsData = require('../src/data');
 const Card = require('../src/card')
 
 class Deck {
   constructor(cardsData) {
-    this.data = cardsData.prototypeData;
+    this.cards = this.createCards(cardsData);
+  }
+
+  createCards(cardsData) {
     this.cards = [];
-  }
-
-  createCards() {
-    this.data.forEach((card) => {
-      return this.cards.push(new Card(card))
+    cardsData.forEach((card) => {
+      this.cards.push(new Card(card));
     });
+    return this.cards
   }
-
 
   cardCount() {
-    return this.data.length
+    return this.cards.length;
   }
 
 }

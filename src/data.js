@@ -152,6 +152,8 @@ const prototypeData = [{
 }]
 /* eslint-enable */
 
+// export default {prototypeData}
+
 module.exports = {
   prototypeData
 }
