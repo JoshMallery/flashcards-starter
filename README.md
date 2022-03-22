@@ -1,5 +1,37 @@
-# FlashCards Starter Kit
+# FlashCards Solo Project
 
+## Overview
+FlashCards is a project to deepen the understanding and learning of testing and classes to create a playable game through the terminal.
+
+### Project Spec
+The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html)
+
+### Contributor
+* [Josh Mallery](https://github.com/JoshMallery)
+
+## My Learning Goals
+ - Contribute code to an partially constructed object-oriented application
+ - Follow spec/prompts to make a working application
+ - Implement ES6 classes
+ - Write modular, reusable code that follows SRP (Single Responsibility Principle)
+ - Implement a robust testing suite using TDD
+
+### Technologies Used
+* JavaScript
+* Git
+* GitHub Projects
+
+## Application Features
+
+* A flashcards game that is playable through the terminal
+* Your score is tracked and is reported at the end of the round.
+
+
+## GamePlay Animation
+
+
+#Instructions and Setup
+s
 ## Fork This Repo
 
 On the top right corner of this page, click the **Fork** button.
@@ -20,7 +52,7 @@ npm install
 
 To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
+Running `node index.js` from the root of your project should result in the following message being displayed in your terminal:
 
 ```bash
 Your project is running...
@@ -67,5 +99,3 @@ npm test
 ```
 
 The test results will output to the terminal.
-
-
