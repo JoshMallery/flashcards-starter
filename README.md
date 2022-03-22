@@ -27,11 +27,11 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 * Your score is tracked and is reported at the end of the round.
 
 
-## GamePlay Animation
-
+## FlashCards Animation
+insert later
 
 #Instructions and Setup
-s
+
 ## Fork This Repo
 
 On the top right corner of this page, click the **Fork** button.
