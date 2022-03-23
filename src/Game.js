@@ -9,12 +9,15 @@ class Game {
     this.cardsData = cardsData
   }
 
-  start() {
+  start(test = 1) {
     this.deck = new Deck(this.cardsData)
     this.round = new Round(this.deck)
     this.currentRound = this.round
+
+    if(test) {
     this.printMessage(this.deck, this.round);
     this.printQuestion(this.round);
+    }
   }
 
   printMessage(deck, round) {
@@ -27,10 +30,5 @@ class Game {
   }
 
 }
-
-(() => {
-  let game = new Game();
-  game.start();
-})();
 
 module.exports = Game;
