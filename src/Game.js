@@ -5,7 +5,7 @@ const Deck = require('../src/Deck');
 const Round = require('../src/Round');
 
 class Game {
-  constructor(cardsData) {
+  constructor(cardsData = prototypeQuestions) {
     this.cardsData = cardsData
   }
 
@@ -25,6 +25,12 @@ class Game {
   printQuestion(round) {
       util.main(round);
   }
+
 }
+
+(() => {
+  let game = new Game();
+  game.start();
+})();
 
 module.exports = Game;
