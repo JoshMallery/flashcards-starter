@@ -27,7 +27,7 @@ describe('Game Test Suite', () => {
   beforeEach(() => {
     deck = new Deck(cardsData);
     round = new Round(deck);
-    game = new Game();
+    game = new Game(cardsData);
     game.start();
   });
 
@@ -39,20 +39,20 @@ describe('Game Test Suite', () => {
       expect(game).to.be.an.instanceof(Game);
     });
 
-    it.skip('should keep track of the currentRound', () =>{
+    it('should keep track of the currentRound', () =>{
       expect(game.currentRound).to.deep.equal(round);
     });
 
-    it.skip('should be able to create Cards', () =>{
-      expect(game.cards[0]).to.deep.equal(cardsData[0]);
-      expect(game.cards[1]).to.deep.equal(cardsData[1]);
+    it('should be able to create Cards', () =>{
+      expect(game.deck.cards[0]).to.deep.equal(cardsData[0]);
+      expect(game.deck.cards[1]).to.deep.equal(cardsData[1]);
     });
 
-    it.skip('should be able to put cards in the Deck', () =>{
-      expect(game.deck).to.deep.equal(cardsData)
+    it('should be able to put cards in the Deck', () =>{
+      expect(game.deck.cards).to.deep.equal(cardsData)
     });
 
-    it.skip('should be able to Create a new Round using the the Deck', () =>{
+    it('should be able to Create a new Round using the the Deck', () =>{
       expect(game.round).to.deep.equal(round);
     });
 
