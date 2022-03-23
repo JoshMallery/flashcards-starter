@@ -29,7 +29,6 @@ describe('Round Test Suite', () => {
     round = new Round(deck);
     round.takeTurn("object");
     round.takeTurn("wrong");
-
   });
 
   it('should be a function', () =>{
@@ -42,12 +41,11 @@ describe('Round Test Suite', () => {
 
   it('should load the deck', () =>{
     expect(round.deck).to.deep.equal(cardsData);
-
   });
 
   it('should have the first card in the Deck as the current Card', () =>{
     round = new Round(deck);
-
+    
     expect(round.currentCard).to.deep.equal(cardsData[0]);
   });
 
@@ -65,7 +63,14 @@ describe('Round Test Suite', () => {
 
   it('should keep track of incorrect guesses ID', () =>{
     expect(round.incorrectGuesses).to.deep.equal([cardsData[1].id]);
+  });
 
+  it('should return incorrect for incorrect guesses', () => {
+    expect(round.takeTurn("wrong")).to.equal('incorrect');
+  });
+
+  it('should return correct for correct guesses', () => {
+    expect(round.takeTurn("mutator method")).to.equal('correct');
   });
 
   it('should calculate the percentage of correct guesses and return', ()=>{
@@ -75,7 +80,7 @@ describe('Round Test Suite', () => {
   });
 
   it('print to the console at the end of the round', () =>{
-    expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!')
+    expect(round.endRound()).to.equal(console.log('** Round over! ** You answered 50% of the questions correctly!'))
     });
 
 
