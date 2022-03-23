@@ -39,7 +39,7 @@ describe('Deck', () => {
   });
 
   it('should know how many cards are in the Deck', () => {
-    expect(deck.cardCount()).to.equal(deck.cards.length);
+    expect(deck.countCards()).to.equal(deck.cards.length);
   });
 
 });
