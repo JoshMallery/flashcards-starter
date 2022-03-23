@@ -8,7 +8,7 @@ class Deck {
   createCards(cardsData) {
     this.cards = [];
     cardsData.forEach((card) => {
-      this.cards.push(new Card(card));
+      this.cards.push(new Card(card.id,card.question,card.answers, card.correctAnswer));
     });
     return this.cards
   }

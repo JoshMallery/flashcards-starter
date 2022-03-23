@@ -13,7 +13,7 @@ describe('Card', function() {
       "correctAnswer": "iteration method"
     }
 
-    card = new Card(cardInfo);
+    card = new Card(cardInfo.id,cardInfo.question,cardInfo.answers,cardInfo.correctAnswer);
   });
 
   it('should be a function', function() {
