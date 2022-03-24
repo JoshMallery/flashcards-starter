@@ -9,12 +9,12 @@ class Game {
     this.cardsData = cardsData
   }
 
-  start(test = 1) {
+  start(testMode = 0) {
     this.deck = new Deck(this.cardsData)
     this.round = new Round(this.deck)
     this.currentRound = this.round
 
-    if(test) {
+    if(!testMode) {
     this.printMessage(this.deck, this.round);
     this.printQuestion(this.round);
     }

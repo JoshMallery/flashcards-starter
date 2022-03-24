@@ -25,7 +25,7 @@ describe('Card', function() {
   });
 
   it('should have an id', () => {
-    expect(card.id).to.equal(5)
+    expect(card.id).to.equal(5);
   });
 
   it('should store a question', function() {
