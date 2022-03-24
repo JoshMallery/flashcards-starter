@@ -1,29 +1,15 @@
 const chai = require('chai');
 const expect = chai.expect;
+const data = require('../src/data');
+const prototypeQuestions = data.prototypeData;
 
 const Deck = require('../src/Deck');
 const Card = require('../src/Card');
-const cardsData = [{
-  "id": 1,
-  "question": "What allows you to define a set of related information using key-value pairs?",
-  "answers": ["object", "array", "function"],
-  "correctAnswer": "object"
-}, {
-  "id": 2,
-  "question": "What is a comma-separated list of related values?",
-  "answers": ["array", "object", "function"],
-  "correctAnswer": "array"
-}, {
-  "id": 3,
-  "question": "What type of prototype method directly modifies the existing array?",
-  "answers": ["mutator method", "accessor method", "iteration method"],
-  "correctAnswer": "mutator method"
-}]
 
 describe('Deck', () => {
 
   beforeEach(()=> {
-    deck = new Deck(cardsData);
+    deck = new Deck(prototypeQuestions);
   });
 
   it('should be a function', () => {
@@ -35,7 +21,7 @@ describe('Deck', () => {
   });
 
   it('should have an array of Cards', () => {
-    expect(deck.cards).to.deep.equal(cardsData);
+    expect(deck.cards).to.deep.equal(prototypeQuestions);
   });
 
   it('should know how many cards are in the Deck', () => {
