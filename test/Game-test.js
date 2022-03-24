@@ -28,7 +28,7 @@ describe('Game Test Suite', () => {
     deck = new Deck(cardsData);
     round = new Round(deck);
     game = new Game(cardsData);
-    game.start();
+    game.start(0);
   });
 
     it('should be a function',() =>{
@@ -54,14 +54,6 @@ describe('Game Test Suite', () => {
 
     it('should be able to Create a new Round using the the Deck', () =>{
       expect(game.round).to.deep.equal(round);
-    });
-
-    it.skip('should be invoke printMessage to display the message in the CLI', () =>{
-      expect(game.printMessage()).to.have.been.called();
-    });
-
-    it.skip('should be invoke printQuestion to kick off out helper functions that allow interactions via the CLI', () =>{
-      expect(game.printQuestion()).to.have.been.called;
     });
 
 });
