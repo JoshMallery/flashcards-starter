@@ -28,7 +28,7 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 
 
 ## FlashCards Game in Action!
-![flash cards example gif]()
+![flash cards example gif](https://user-images.githubusercontent.com/96563007/159818404-f288612e-ab2f-4526-9c40-44aa4d2b779f.gif)
 
 #Instructions and Setup
 
@@ -54,4 +54,4 @@ node index.js
 
 You will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of 30 cards:
 
-![flash cards example gif]()
+![flash cards example gif](https://user-images.githubusercontent.com/96563007/159818404-f288612e-ab2f-4526-9c40-44aa4d2b779f.gif)
